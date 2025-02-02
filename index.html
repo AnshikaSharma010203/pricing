@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pricing table</title>
+  <style>
+    .container{
+      height:80vh;
+      display:flex;
+      gap: 10%;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .price{
+      width:30%;
+      padding: 50px;
+      background-color:		#c0c0c0 ;
+      text-align: center;
+      border-radius: 5%;
+    }
+    .price p{
+      font-family: "Exo 2", serif;
+      font-size:16px;
+    }
+    .bold-outline{
+      font-weight: 900;
+    }
+    button{
+      background-color: 	#ff4500;
+      border: solid 	#ff4500;
+      border-radius: 8px;
+      color: white;
+      padding:5px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    @media (max-width:921px){
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="price p1">
+      <p class="bold-outline">Basic</p>
+      <h2>$11.99/month</h2>
+      <p>✅ 10GB Storage</p>
+      <p>✅ 1 user</p>
+      <p>🚫 Support</p>
+      <button>signup</button>
+    </div>
+    <div class="price p2">
+      <p class="bold-outline">Standard</p>
+      <h2>$19.99/month</h2>
+      <p>✅ 50GB Storage</p>
+      <p>✅ 5 user</p>
+      <p>✅Phone & Email Support</p>
+      <button>signup</button>
+    </div>
+    <div class="price p3">
+      <p class="bold-outline">Premium</p>
+      <h2>$49.99/month</h2>
+      <p>✅ 100GB Storage</p>
+      <p>✅ 10 user</p>
+      <p>✅ 24/7 Support</p>
+      <button>signup</button>
+    </div>
+  </div>
+</body>
+</html>
